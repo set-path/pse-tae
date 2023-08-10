@@ -64,7 +64,7 @@ python preprocessing.py --path 你的待推理地块文件夹路径 --noData 0 -
 
 `--path`：指向待推理的时序数据文件夹
 
-`--noData`：计算有效像素N是，忽略noData的值，默认为0
+`--noData`：计算有效像素N，忽略noData的值，默认为0
 
 `--shpPath`：用于计算地块的几何特征，在shp文件的相同路径下要有该地块的`.shx`、`.prj`、`.dbf`文件，且文件名相同
 
