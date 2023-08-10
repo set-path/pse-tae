@@ -55,7 +55,7 @@ pip install -r requirements.txt
 
 1. 首先将以日期命名的单个地块的tiff文件放到同一个文件夹下
 
-2. 进行数据预处理，将多个维度为$(channel,width,height)$转换成$(max\_time\_seq,channel,N)$，其中$N$是一幅图像中的所有有效像素数，格式为`.npy`，存储在`你的待推理地块文件夹/DATA`目录下，同时会在`你的待推理地块文件夹/META`目录下生成`geomfeat.json`文件，用于辅助模型推理
+2. 进行数据预处理，将多个维度为$(channel,width,height)$转换成$(sequence,channel,N)$，其中$N$是一幅图像中的所有有效像素数，格式为`.npy`，存储在`你的待推理地块文件夹/DATA`目录下，同时会在`你的待推理地块文件夹/META`目录下生成`geomfeat.json`文件，用于辅助模型推理
 
 ```shell
 python preprocessing.py --path 你的待推理地块文件夹路径 --noData 0 --shpPath shp文件路径
