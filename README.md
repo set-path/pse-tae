@@ -7,6 +7,7 @@
 ## 配置环境
 
 ```shell
+git clone https://github.com/set-path/pse-tae.git
 cd PSE-TAE
 conda create -n env_name python=3.8
 conda activate env_name
