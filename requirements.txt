@@ -5,3 +5,4 @@ pandas
 sklearn
 rasterio
 geopandas
+tqdm
